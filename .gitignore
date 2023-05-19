@@ -1,0 +1,9 @@
+.env
+node_modules
+tests
+pAWS
+.prettierrc
+.prettierignore
+AppDone_preAdj.code-workspace
+trialAppAlmostDone.code-workspace
+trialAppUTS.code-workspace

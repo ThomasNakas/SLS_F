@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Pale color palette for background */
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 80%;
+    max-width: 400px; /* Set maximum width to 400px */
+    border-radius: 0.2rem;
+    background-color: #ffffff; /* White background for form */
+    padding: 2rem;
+    margin: 0 auto; /* Center the signup form */
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.384);
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333333; /* Dark color for labels */
+}
+
+.text,
+.email,
+.name {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 0.2rem;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.text:focus,
+.email:focus,
+.name:focus {
+    box-shadow: none; /* Remove box-shadow on focus */
+    outline: none;
+    outline-width: 1px;
+    border-color: #007bff;
+}
+
+.password {
+    align-self: center;
+    border: none;
+}
+
+.password:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: none; /* Remove box-shadow on focus */
+    border-color: #007bff; /* Add border color on focus */
+}
+
+#signup-name {
+    width: 100%;
+}
+
+.password-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 0.2rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.password-input:focus-within {
+    border-color: #007bff;
+}
+
+.eye-icon {
+    color: #cccccc; /* Light color for eye icon */
+    cursor: pointer;
+}
+
+#password-strength {
+    margin-top: 0.5rem;
+    color: rgba(255, 165, 0, 0.8); /* Orange color with 80% opacity */
+    border: 1px solid rgba(255, 165, 0, 0.2); /* Border with 20% opacity */
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Blue button color */
+    color: #ffffff; /* White button text color */
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+#trans {
+    margin: 0.5rem;
+    display: flex;
+}
+#trans > * {
+    margin: 0;
+    padding: 0;
+    color: #0000008f;
+}
+
+#ELog {
+    padding-left: 0.3rem;
+    text-decoration: none;
+    color: #007bffc0;
+}
+/* Centering the form on smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        align-items: flex-start;
+    }
+
+    #signup-form {
+        width: 100%;
+        max-width: none; /* Reset the maximum width on smaller screens */
+    }
+}

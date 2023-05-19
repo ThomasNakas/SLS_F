@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Pale color palette for background */
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+#login-form {
+    width: 80%;
+    max-width: 400px; /* Set maximum width to 400px */
+    border-radius: 0.2rem;
+    background-color: #ffffff; /* White background for form */
+    padding: 2rem;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.384);
+}
+
+h2 {
+    text-align: center;
+}
+/* Additional styling for form elements (labels, inputs, button) */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+}
+input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+    /* Set outline style for consistency */
+}
+
+input[type="password"],
+input[type="text"] {
+    align-self: center;
+    border: none;
+    outline: none;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus {
+    box-shadow: none; /* Remove box-shadow on focus */
+    outline: none;
+    border: none;
+}
+
+#signup-name {
+    width: 100%; /* Take full width of the line */
+}
+
+.password-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 0.2rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.password-input:focus-within {
+    border-color: #007bff;
+}
+
+button[type="submit"] {
+    margin-top: 1rem;
+    background-color: #007bff; /* Blue button color */
+    color: #ffffff; /* White button text color */
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+#trans {
+    margin: 0.5rem;
+    display: flex;
+}
+#trans > * {
+    margin: 0;
+    padding: 0;
+    color: #0000008f;
+}
+
+#ESin {
+    padding-left: 0.3rem;
+    text-decoration: none;
+    color: #007bffc0;
+}
+/* Centering the form on smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        align-items: flex-start;
+    }
+
+    #login-form {
+        width: 100%;
+        max-width: none; /* Reset the maximum width on smaller screens */
+    }
+}

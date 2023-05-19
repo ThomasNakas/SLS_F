@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="/signup/signup.css" />
+        <title>Sing Up</title>
+    </head>
+    <body>
+        <!--============================================================= -->
+
+        <form id="signup-form" action="/signup/signData" method="POST">
+            <!--============================================================= -->
+
+            <h2>Signup</h2>
+            <label for="signup-name">Name</label>
+            <input
+                type="text"
+                id="signup-name"
+                class="name"
+                name="name"
+                required
+                placeholder="Enter your name"
+            />
+
+            <label for="signup-email">Email</label>
+            <input
+                type="email"
+                class="email"
+                id="signup-email"
+                name="email"
+                required
+                placeholder="Enter your email"
+            />
+
+            <label for="signup-password">Password</label>
+            <div class="password-input">
+                <input
+                    type="password"
+                    id="signup-password"
+                    class="password"
+                    name="password"
+                    required
+                    placeholder="Enter your password"
+                />
+                <span class="password-toggle">
+                    <i id="eye-icon" class="far fa-eye"></i>
+                </span>
+            </div>
+            <p id="password-strength">
+                Password must contain at least 8 characters including one
+                uppercase letter, one lowercase letter, one digit, and one
+                special symbol.
+            </p>
+
+            <button type="submit">Signup</button>
+
+            <div id="trans">
+                <p>Are you already registered?</p>
+                <a href="/login/login.html" id="ELog">Login</a>
+            </div>
+        </form>
+
+        <!-- integrating the JavaScript file -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="/signup/signup.js"></script>
+    </body>
+</html>

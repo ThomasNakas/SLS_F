@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup Success</title>
+        <style>
+            body {
+                position: relative;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .popup {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: max-content;
+                border-radius: 2em;
+                padding: 4em;
+                text-align: center;
+                margin: 4em;
+            }
+
+            .error {
+                border: 1px solid #ccc;
+                background-color: #ffcccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="popup error">
+            <h2>Error!</h2>
+            <p>A user with the same email already exists.</p>
+        </div>
+        <script>
+            // Redirect to another page after 5 seconds
+            setTimeout(() => {
+                window.location.href = "/signup/signup.html";
+            }, 1000);
+        </script>
+    </body>
+</html>
