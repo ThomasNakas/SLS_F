@@ -14,7 +14,7 @@ const private_Key =process.env.PR_KEY;
 // Define the routes for the API
 router.post("/send-email", async (req, res) => {
     // Get the form data from the request body
-    const recipient = req.body.recipient;
+    const {recipient, subject}= req.body;
     const name = users.find((user) => user.email === recipient)?.name;
     const options = {
         method: "POST",
@@ -41,7 +41,9 @@ router.post("/send-email", async (req, res) => {
             content: [
                 {
                     type: "text/plain",
-                    value: `Thank you, ${name} for your application. We\'ll review it and provide updates promptly. We appreciate your interest in our company.`,
+                    value: `Thank you, ${name} for your application with subject ${subject} have been uploaded. 
+                            We\'ll review it and provide updates promptly at you ${recipient}. 
+                            We appreciate your interest in our company.`,
                 },
             ],
         },
@@ -52,7 +54,7 @@ router.post("/send-email", async (req, res) => {
         console.log(response.data);
         // Send a success response back to the client
         res.status(200).render(path.join(__dirname, "../views/submitS"));
-        
+
     } catch (error) {
         console.error(error);
         // Send an error response back to the client

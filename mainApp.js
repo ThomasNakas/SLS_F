@@ -17,6 +17,8 @@ app.use(bodyParser.json());
 
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, "public")));
+// Serve static files from the "images" directory
+app.use(express.static(path.join(__dirname, "images")));
 
 // Define the health check route
 app.get("/health", (req, res) => {
