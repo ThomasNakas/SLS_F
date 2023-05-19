@@ -30,7 +30,7 @@
     "password": "........"
   },
   {
-    "name": "t@gmail.com",
+    "name": "t.nakas.ua@gmail.com",
     "email": "t5@gmail.com",
     "password": "........"
   },
@@ -38,6 +38,12 @@
     "name": "t9",
     "email": "t9@gmail.com",
     "password": "xaxasaxsxxsax!1Aa",
+    "login": false
+  },
+  {
+    "name": "tre",
+    "email": "tftdftf@gmail.com",
+    "password": "....nibnubbvyvyvyvA1!",
     "login": false
   }
 ]
