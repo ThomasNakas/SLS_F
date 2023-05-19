@@ -1,3 +1,4 @@
+data.json
 .env
 node_modules
 tests
@@ -7,3 +8,5 @@ pAWS
 AppDone_preAdj.code-workspace
 trialAppAlmostDone.code-workspace
 trialAppUTS.code-workspace
+finalApp.code-workspace
+trialApp.code-workspace
