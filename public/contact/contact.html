@@ -12,34 +12,37 @@
         <a href="/signup/signup.html" id="ELog">Log Out</a>
         <form id="contactForm" action="/api/send-email" method="POST">
             <h2>Application</h2>
-            <label for="recipient">Recipient</label>
-            <input
-                type="email"
-                id="recipient"
-                name="recipient"
-                required
-                placeholder="Enter recipient email"
-            /><br /><br />
+            <div class="label-cont">
+                <label for="recipient">Recipient</label>
+                <input
+                    type="email"
+                    id="recipient"
+                    name="recipient"
+                    required
+                    placeholder="Enter recipient email"
+                /><br /><br />
+    
+                <div id="emailError" class="error-message"></div>
+    
+                <label for="subject">Subject</label>
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    placeholder="Enter email subject"
+                /><br /><br />
+    
+                <label for="body">Message</label>
+                <textarea
+                    id="body"
+                    name="body"
+                    required
+                    placeholder="Enter email message"
+                ></textarea
+                ><br /><br />
 
-            <div id="emailError" class="error-message"></div>
-
-            <label for="subject">Subject</label>
-            <input
-                type="text"
-                id="subject"
-                name="subject"
-                required
-                placeholder="Enter email subject"
-            /><br /><br />
-
-            <label for="body">Message</label>
-            <textarea
-                id="body"
-                name="body"
-                required
-                placeholder="Enter email message"
-            ></textarea
-            ><br /><br />
+            </div>
 
             <button id="sButton" onclick="validateEmail()" type="submit">
                 Send Email

@@ -15,7 +15,7 @@ const private_Key =process.env.PR_KEY;
 router.post("/send-email", async (req, res) => {
     // Get the form data from the request body
     const {recipient, subject}= req.body;
-    const name = users.find((user) => user.email === recipient)?.name;
+    const name = users.find((user) => user.email === recipient)?.name ||"";//take the name or "" if the user doesnt exist
     const options = {
         method: "POST",
         url: "https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send",
@@ -41,9 +41,13 @@ router.post("/send-email", async (req, res) => {
             content: [
                 {
                     type: "text/plain",
-                    value: `Thank you, ${name} for your application with subject ${subject} have been uploaded. 
-                            We\'ll review it and provide updates promptly at you ${recipient}. 
-                            We appreciate your interest in our company.`,
+                    value: `      Thank you, ${name} for your application with subject " ${subject} " have been uploaded.
+                    
+                     We\'ll review it and provide updates promptly at your email : ${recipient}.
+                    
+                     We appreciate your interest in our company. 
+                    
+                     Kind Regards, Thomas`,
                 },
             ],
         },
