@@ -19,7 +19,7 @@ router.post("/logData", (req, res) => {
     if (!user || user.password !== password) {
         return res.status(401).render(path.join(__dirname, "../views/inv"));
     }
-  
+
     // Authentication successful, return success message or perform further actions
     res.status(200).render(path.join(__dirname, "../views/success"));
 });

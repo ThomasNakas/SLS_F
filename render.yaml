@@ -1,6 +1,6 @@
 version: 1
 buildCommand:
-  - npm ci --production
+    - npm ci --production
 startCommand: npm start
 env:
-  NODE_ENV: production
+    NODE_ENV: production

@@ -69,7 +69,7 @@ input[type="text"]:focus {
     border-color: #007bff;
 }
 
-button{
+button {
     margin-top: 1rem;
     background-color: #007bff; /* Blue button color */
     color: #ffffff; /* White button text color */
@@ -79,9 +79,9 @@ button{
     cursor: pointer;
 }
 
-button:hover{
-  opacity: 0.8;
-  cursor: pointer;
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 #trans {
@@ -99,8 +99,8 @@ button:hover{
     text-decoration: none;
     color: #007bffc0;
 }
-#ESin:hover{
-  opacity: 0.9;
+#ESin:hover {
+    opacity: 0.9;
 }
 /* Centering the form on smaller screens */
 @media screen and (max-width: 768px) {

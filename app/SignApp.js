@@ -27,17 +27,15 @@ router.post("/signData", (req, res) => {
     if (isExistingUser) {
         return res.render(path.join(__dirname, "../views/signUpF"));
     }
-    
 
-    
     // Make sure users is an array
     if (!Array.isArray(users)) {
         users = [];
     }
-    
+
     // Add new user to the array
     users.push(newUser);
-    
+
     // Save updated user data to data.json file
     fs.writeFileSync(dataPath, JSON.stringify(users, null, 2));
     res.render(path.join(__dirname, "../views/signUpS"));

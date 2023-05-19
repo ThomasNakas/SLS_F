@@ -4,9 +4,9 @@ This project is a login/signup application with a local JSON database and extern
 
 ## Features
 
-- :lock: Login and Signup
-- :floppy_disk: Local JSON Database
-- :globe_with_meridians: Calling External API
+-   :lock: Login and Signup
+-   :floppy_disk: Local JSON Database
+-   :globe_with_meridians: Calling External API
 
 ## Next Steps
 
@@ -14,8 +14,8 @@ I plan to integrate AI functionality in the future. Your feedback and specificat
 
 ## Technologies Used
 
-- Node.js
-- Express.js
-- JSON
-- HTML
-- CSS
+-   Node.js
+-   Express.js
+-   JSON
+-   HTML
+-   CSS
