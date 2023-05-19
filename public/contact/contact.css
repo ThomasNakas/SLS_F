@@ -1,3 +1,6 @@
+*{
+  border-radius:0.2em;
+}
 body {
     display: flex;
     justify-content: center;
@@ -15,6 +18,12 @@ body {
     background-color: #ffffff; /* White background for form */
     padding: 1rem;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.384);
+    padding:1.5em;
+
+}
+#contactForm>*{
+  border-radius:0.2;
+  box-shadow: none;
 }
 
 h2 {
@@ -33,6 +42,7 @@ a {
     border: none;
     border-radius: 0.2rem;
     cursor: pointer;
+    padding:0.7em;
 }
 button:hover,
 a:hover {
@@ -44,6 +54,9 @@ input[type="text"],
 textarea {
     width: 100%;
     min-height: 1.5em;
+    border-color:rgba(0, 0, 0, 0.452);
+    outline-color:none;
+    box-shadow: none;
 }
 input[type="email"]:focus-visible,
 input[type="text"]:focus-visible,
